@@ -4,7 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/Home";
 import ProfilePage from "./pages/Profile";
 import NotFoundPage from "./pages/NotFound";
-import UpgradePage from "./pages/Upgarder";
+import Upgrade from "./pages/UpgradeNew";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path="profile" element={<ProfilePage />} />
-          <Route path="upgrade" element={<UpgradePage />} />
+          <Route path="upgrade" element={<Upgrade />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
